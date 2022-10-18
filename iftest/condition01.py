@@ -3,10 +3,10 @@
 
 def main():
 
-    # create the string hostname
+    ## Collect input from the user
     hostname= input("What value should we set for hostname? ==> ")
-    # test logic with the 'if' statement
-    # what to do if this statement is found to be true
+    
+    ## use the lower method to test if input value matches expected value
     if hostname.lower()== "mtg":
         print("The hostname was found to be mtg")
         print("Hostname matches expected config")
