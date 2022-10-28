@@ -5,10 +5,9 @@
 import socket
 
 def connect_to_ip(ip, port):
-    try:
-        sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    if sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM):
         return sock
-    except Exception:
+    else:
         return None
 
 def scan_port(ip, port, timeout):
@@ -43,23 +42,15 @@ def main():
             print(f"\nYou entered --> {port}")
             break
 
-    while True:
-        timeout = int(input(f"\nSpecify timeout (default = 5) --> "))
-        if timeout == "":
-            print(f"System will use default timeout of 5")
-            break
-        else:
-            print(f"You entered --> {timeout}")
-            break
-
     port_range = port.split("-")
 
     # Get IP address if host name is a domain
-    ip = None
+    
+    ip = ip_domain
 
-    try:
+    if:
         ip = socket.gethostname(ip_domain)
-    except Exception:
+    else:
         print(f'Unable to resolve the domain')
 
     # if user only entered one port, program will only scan one port

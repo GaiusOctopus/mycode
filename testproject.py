@@ -14,6 +14,6 @@ for port in range(65535):      #check for all available ports
 
     except:
 
-        print('[OPEN] Port open :',port) #print open port number
+        print('[OPEN] Port open :', port) #print open port number
 
     serv.close() #close connection
